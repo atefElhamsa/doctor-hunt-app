@@ -1,3 +1,4 @@
+import 'package:doctor_hunt_app/features/home/presentation/views/home_screen.dart';
 import 'package:doctor_hunt_app/features/onboarding/data/models/onboarding_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -60,11 +61,11 @@ class OnboardingWidget extends StatelessWidget {
                     title: onboardingModel.buttonTitle ?? AppTexts.getStarted,
                     padding: AppPadding.p25,
                     onTap: () {
-                      if (currentPageIndex == 3) {
+                      if (currentPageIndex == onboardingItems.length - 1) {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const SizedBox(),
+                            builder: (context) => const HomeScreen(),
                           ),
                         );
                       } else {
