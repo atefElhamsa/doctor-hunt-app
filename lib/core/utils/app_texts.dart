@@ -18,4 +18,12 @@ class AppTexts {
   static const String blessing = "Dr. Blessing";
   static const String medicine = "Medicine Specialist";
   static const String dentist = "Dentist Specialist";
+  static const String featureDoctor = "Feature Doctor";
+  static const String crick = "Dr. Crick";
+  static const String strain = "Dr. Strain";
+  static const String lachinet = "Dr. Lachinet";
+  static const String dollarSin = "\$";
+  static const String twentyFive = "25.00/ hours";
+  static const String twentyTwo = "22.00/ hours";
+  static const String twentyNine = "29.00/ hours";
 }

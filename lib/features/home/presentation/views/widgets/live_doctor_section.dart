@@ -15,7 +15,7 @@ class LiveDoctorSection extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(right: 270, top: AppPadding.p15),
+          padding: const EdgeInsets.only(right: 290, top: AppPadding.p15),
           child: CustomText(
             textModel: TextModel(
               title: AppTexts.liveDoctors,

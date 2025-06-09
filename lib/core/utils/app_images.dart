@@ -18,4 +18,7 @@ class AppImages {
   static const String fillerUp = "assets/images/Fillerup.png";
   static const String blessing = "assets/images/blessing.png";
   static const String star = "assets/images/star.png";
+  static const String crick = "assets/images/crick.png";
+  static const String lachinet = "assets/images/lachinet.png";
+  static const String strain = "assets/images/strain.png";
 }
