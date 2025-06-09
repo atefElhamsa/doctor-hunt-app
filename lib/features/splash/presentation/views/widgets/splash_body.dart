@@ -38,7 +38,10 @@ class _SplashBodyState extends State<SplashBody> {
       height: AppSize.infinity,
       width: AppSize.infinity,
       decoration: const BoxDecoration(
-        image: DecorationImage(image: AssetImage(AppImages.background)),
+        image: DecorationImage(
+          image: AssetImage(AppImages.background),
+          fit: BoxFit.cover,
+        ),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

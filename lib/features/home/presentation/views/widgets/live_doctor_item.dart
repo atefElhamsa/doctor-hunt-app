@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../../../../core/shared_widgets/custom_text.dart';
 import '../../../../../core/shared_widgets_model/text_model.dart';
 import '../../../../../core/utils/app_colors.dart';
@@ -9,16 +8,17 @@ import '../../../../../core/utils/app_size.dart';
 import '../../../../../core/utils/app_texts.dart';
 
 class LiveDoctorItem extends StatelessWidget {
-  const LiveDoctorItem({super.key});
+  const LiveDoctorItem({super.key, required this.image});
+  final String image;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(AppImages.liveDoctor1, fit: BoxFit.cover),
+        Image.asset(image, fit: BoxFit.cover),
         const Positioned(
-          top: 100,
-          left: 60,
+          top: 95,
+          left: 57,
           child: Icon(
             Icons.play_circle_outline_rounded,
             color: AppColors.white,
@@ -29,6 +29,7 @@ class LiveDoctorItem extends StatelessWidget {
           left: 80,
           top: 30,
           child: Container(
+            height: AppSize.s20,
             width: AppSize.s40,
             decoration: BoxDecoration(
               color: AppColors.red,

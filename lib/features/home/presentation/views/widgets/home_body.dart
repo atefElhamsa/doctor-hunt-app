@@ -21,34 +21,38 @@ class _HomeBodyState extends State<HomeBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
+    return Column(
       children: [
-        Container(
-          width: AppSize.infinity,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(AppImages.background),
-              fit: BoxFit.cover,
+        Stack(
+          children: [
+            Container(
+              width: AppSize.infinity,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(AppImages.background),
+                  fit: BoxFit.cover,
+                ),
+              ),
+              child: const HomeList(),
             ),
-          ),
-          child: const HomeList(),
-        ),
-        const InfoAppBar(),
-        Positioned(
-          top: 120,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: AppPadding.p20),
-            child: SizedBox(
-              height: 100,
-              width: 340.w,
-              child: CustomTextFormField(
-                textFieldModel: TextFieldModel(
-                  hintText: AppTexts.search,
-                  controller: nameController,
+            const InfoAppBar(),
+            Positioned(
+              top: 120,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: AppPadding.p20),
+                child: SizedBox(
+                  height: 100,
+                  width: 340.w,
+                  child: CustomTextFormField(
+                    textFieldModel: TextFieldModel(
+                      hintText: AppTexts.search,
+                      controller: nameController,
+                    ),
+                  ),
                 ),
               ),
             ),
-          ),
+          ],
         ),
       ],
     );
