@@ -12,4 +12,10 @@ class AppTexts {
   static const String search = "Search";
   static const String liveDoctors = "Live Doctors";
   static const String live = "LIVE";
+  static const String popularDoctor = "Popular Doctor";
+  static const String seeAll = "See all";
+  static const String fillerup = "Dr. Fillerup Grab";
+  static const String blessing = "Dr. Blessing";
+  static const String medicine = "Medicine Specialist";
+  static const String dentist = "Dentist Specialist";
 }

@@ -1,4 +1,4 @@
-import 'package:doctor_hunt_app/features/home/presentation/views/home_screen.dart';
+import 'package:doctor_hunt_app/features/splash/presentation/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return const MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: HomeScreen(),
+          home: SplashScreen(),
         );
       },
     );

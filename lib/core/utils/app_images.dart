@@ -15,4 +15,7 @@ class AppImages {
   static const String eyes = "assets/images/eyes.png";
   static const String female = "assets/images/female.png";
   static const String stomach = "assets/images/stomach.png";
+  static const String fillerUp = "assets/images/Fillerup.png";
+  static const String blessing = "assets/images/blessing.png";
+  static const String star = "assets/images/star.png";
 }
