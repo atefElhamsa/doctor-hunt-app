@@ -21,4 +21,9 @@ class AppImages {
   static const String crick = "assets/images/crick.png";
   static const String lachinet = "assets/images/lachinet.png";
   static const String strain = "assets/images/strain.png";
+  static const String doctorLiveBackground = "assets/images/doctor_live.png";
+  static const String everhart = "assets/images/everhart.png";
+  static const String bonebrake = "assets/images/bonebrake.png";
+  static const String handler = "assets/images/handler.png";
+  static const String comfort = "assets/images/comfort.png";
 }

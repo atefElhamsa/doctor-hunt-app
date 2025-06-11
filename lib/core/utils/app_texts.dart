@@ -26,4 +26,13 @@ class AppTexts {
   static const String twentyFive = "25.00/ hours";
   static const String twentyTwo = "22.00/ hours";
   static const String twentyNine = "29.00/ hours";
+  static const String everhart = "Everhart Tween";
+  static const String commentEverhart = "Thanks for sharing doctor ❤️";
+  static const String bonebrake = "Bonebrake Mash";
+  static const String commentBonebrake = "They treat immune system disorders";
+  static const String handler = "Handler Wack";
+  static const String commentHandler = "This is the largest directory 👍";
+  static const String comfort = "Comfort Love";
+  static const String commentComfort = "Depending on their education 😁";
+  static const String addComment = "Add a Comment...";
 }
