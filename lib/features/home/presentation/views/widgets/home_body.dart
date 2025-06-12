@@ -1,3 +1,4 @@
+import 'package:doctor_hunt_app/features/find_doctors/presentation/views/find_doctors_screen.dart';
 import 'package:doctor_hunt_app/features/home/presentation/views/widgets/home_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -40,7 +41,9 @@ class _HomeBodyState extends State<HomeBody> {
               Positioned(
                 top: 120,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: AppPadding.p20),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: AppPadding.p20,
+                  ),
                   child: SizedBox(
                     height: 100,
                     width: 340.w,
@@ -48,6 +51,13 @@ class _HomeBodyState extends State<HomeBody> {
                       textFieldModel: TextFieldModel(
                         hintText: AppTexts.search,
                         controller: nameController,
+                        onTap:
+                            () => Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const FindDoctorsScreen(),
+                              ),
+                            ),
                       ),
                     ),
                   ),

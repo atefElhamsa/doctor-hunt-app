@@ -1,8 +1,6 @@
 import 'package:doctor_hunt_app/core/shared_widgets_model/text_field_model.dart';
 import 'package:flutter/material.dart';
-
 import '../utils/app_colors.dart';
-import '../utils/app_texts.dart' show AppTexts;
 import '../utils/my_validators.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -12,6 +10,7 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onTap: textFieldModel.onTap,
       autovalidateMode: AutovalidateMode.onUserInteraction,
       keyboardType: TextInputType.name,
       controller: textFieldModel.controller,
@@ -24,7 +23,7 @@ class CustomTextFormField extends StatelessWidget {
           child: const Icon(Icons.clear, color: AppColors.grey),
         ),
         prefixIcon: const Icon(Icons.search, color: AppColors.grey),
-        hintText: AppTexts.search,
+        hintText: textFieldModel.hintText,
         hintStyle: const TextStyle(color: AppColors.grey),
         enabledBorder: outlineInputBorder(),
         focusedBorder: outlineInputBorder(),

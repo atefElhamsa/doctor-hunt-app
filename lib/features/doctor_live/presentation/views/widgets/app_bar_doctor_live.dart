@@ -1,7 +1,7 @@
+import 'package:doctor_hunt_app/core/shared_widgets/custom_navigate_pop.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_padding.dart';
-import '../../../../../core/utils/app_size.dart';
 
 class AppBarDoctorLive extends StatelessWidget {
   const AppBarDoctorLive({super.key, required this.image});
@@ -14,19 +14,7 @@ class AppBarDoctorLive extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          GestureDetector(
-            onTap: () => Navigator.pop(context),
-            child: Container(
-              height: AppSize.s36,
-              width: AppSize.s36,
-              padding: const EdgeInsets.only(left: 10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: AppColors.white,
-              ),
-              child: const Icon(Icons.arrow_back_ios, color: AppColors.grey),
-            ),
-          ),
+          const CustomNavigatePop(),
           CircleAvatar(
             radius: 20,
             backgroundColor: AppColors.white,

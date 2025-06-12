@@ -26,4 +26,8 @@ class AppImages {
   static const String bonebrake = "assets/images/bonebrake.png";
   static const String handler = "assets/images/handler.png";
   static const String comfort = "assets/images/comfort.png";
+  static const String shruti = "assets/images/shruti.png";
+  static const String crownOver = "assets/images/crownover.png";
+  static const String watamaniuk = "assets/images/watamaniuk.png";
+  static const String circular = "assets/images/circular.png";
 }

@@ -18,6 +18,7 @@ class AppTexts {
   static const String blessing = "Dr. Blessing";
   static const String medicine = "Medicine Specialist";
   static const String dentist = "Dentist Specialist";
+  static const String dentistHint = "Dentist";
   static const String featureDoctor = "Feature Doctor";
   static const String crick = "Dr. Crick";
   static const String strain = "Dr. Strain";
@@ -35,4 +36,26 @@ class AppTexts {
   static const String comfort = "Comfort Love";
   static const String commentComfort = "Depending on their education 😁";
   static const String addComment = "Add a Comment...";
+  static const String findDoctors = "Find Doctors";
+  static const String shruti = "Dr. Shruti Kedia";
+  static const String toothsDentist = "Tooths Dentist";
+  static const String sevenYearsExperience = "7 Years experience";
+  static const String ratio87 = "87%";
+  static const String time10 = "10:00 AM tomorrow";
+  static const String patientStories69 = "69 Patient Stories";
+  static const String watamaniuk = "Dr. Watamaniuk";
+  static const String nineYearsExperience = "9 Years experience ";
+  static const String ratio74 = "74%";
+  static const String time12 = "12:00 AM tomorrow";
+  static const String patientStories78 = "78 Patient Stories";
+  static const String crownover = "Dr. Crownover";
+  static const String fiveYearsExperience = "5 Years experience";
+  static const String sexYearsExperience = "6 Years experience";
+  static const String ratio59 = "59%";
+  static const String time11 = "11:00 AM tomorrow";
+  static const String time1 = "1:00 PM tomorrow";
+  static const String patientStories86 = "86 Patient Stories";
+  static const String balestra = "Dr. Balestra";
+  static const String nextAvailable = "Next Available";
+  static const String bookNow = "Book Now";
 }
