@@ -1,4 +1,5 @@
 import 'package:doctor_hunt_app/core/utils/app_images.dart';
+import 'package:doctor_hunt_app/core/utils/app_padding.dart';
 import 'package:doctor_hunt_app/core/utils/app_size.dart';
 import 'package:doctor_hunt_app/features/doctor_live/presentation/views/widgets/app_bar_doctor_live.dart';
 import 'package:doctor_hunt_app/features/doctor_live/presentation/views/widgets/comments_and_add_one.dart';
@@ -19,14 +20,13 @@ class DoctorLiveBody extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: SafeArea(
-        child: Column(
-          children: [
-            AppBarDoctorLive(image: image),
-            const Spacer(),
-            const CommentsAndAddOne(),
-          ],
-        ),
+      child: Column(
+        children: [
+          const SizedBox(height: AppPadding.p50,),
+          AppBarDoctorLive(image: image),
+          const Spacer(),
+          const CommentsAndAddOne(),
+        ],
       ),
     );
   }
