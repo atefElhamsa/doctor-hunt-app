@@ -87,10 +87,9 @@ class OnboardingWidget extends StatelessWidget {
               buttonModel: ButtonModel(
                 title: AppTexts.skip,
                 onTap: () {
-                  pageController.animateToPage(
-                    onboardingItems.length - 1,
-                    duration: const Duration(seconds: 1),
-                    curve: Curves.ease,
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomeScreen()),
                   );
                 },
               ),
