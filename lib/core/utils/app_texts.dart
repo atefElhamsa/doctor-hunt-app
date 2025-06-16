@@ -58,4 +58,6 @@ class AppTexts {
   static const String balestra = "Dr. Balestra";
   static const String nextAvailable = "Next Available";
   static const String bookNow = "Book Now";
+  static const String selectTime = "Select Time";
+  static const String contentDoctor = "Upasana Dental Clinic, salt lake";
 }

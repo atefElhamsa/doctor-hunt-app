@@ -1,6 +1,7 @@
 import 'package:doctor_hunt_app/core/shared_widgets_model/button_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../shared_widgets_model/text_model.dart';
 import '../utils/app_colors.dart';
 import '../utils/app_padding.dart';
@@ -23,12 +24,15 @@ class CustomButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: buttonModel.color ?? AppColors.materialButtonColor,
           borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            color: buttonModel.borderColor ?? AppColors.transparent,
+          ),
         ),
         child: Center(
           child: CustomText(
             textModel: TextModel(
               title: buttonModel.title,
-              color: AppColors.white,
+              color: buttonModel.textColor ?? AppColors.white,
               fontSize: AppSize.s18.sp,
             ),
           ),

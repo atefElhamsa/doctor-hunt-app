@@ -14,7 +14,7 @@ class HomeList extends StatelessWidget {
       child: ListView(
         physics: const BouncingScrollPhysics(),
         children: [
-          const SizedBox(height: 180),
+          const SizedBox(height: 140),
           const LiveDoctorSection(),
           const SizedBox(height: 90, child: ListViewSpecificDoctor()),
           const PopularDoctorSection(),

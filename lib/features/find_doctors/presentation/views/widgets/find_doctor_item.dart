@@ -1,7 +1,10 @@
 import 'package:doctor_hunt_app/core/utils/app_texts.dart';
+import 'package:doctor_hunt_app/features/doctor_select_time/data/models/doctor_select_time_model.dart';
+import 'package:doctor_hunt_app/features/doctor_select_time/presentation/view/doctor_select_time_screen.dart';
 import 'package:doctor_hunt_app/features/find_doctors/data/models/find_doctor_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../../../../../core/shared_widgets/custom_text.dart';
 import '../../../../../core/shared_widgets_model/text_model.dart';
 import '../../../../../core/utils/app_colors.dart';
@@ -84,19 +87,36 @@ class _FindDoctorItemState extends State<FindDoctorItem> {
                 ],
               ),
               const Spacer(),
-              Container(
-                height: 34,
-                width: 112,
-                decoration: BoxDecoration(
-                  color: AppColors.materialButtonColor,
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Center(
-                  child: CustomText(
-                    textModel: TextModel(
-                      title: AppTexts.bookNow,
-                      color: AppColors.white,
-                      fontSize: AppSize.s12.sp,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:
+                          (context) => DoctorSelectTimeScreen(
+                            doctorSelectTimeModel: DoctorSelectTimeModel(
+                              image: widget.findDoctorModel.image,
+                              name: widget.findDoctorModel.name,
+                              isFavourite: widget.findDoctorModel.isFavourite,
+                            ),
+                          ),
+                    ),
+                  );
+                },
+                child: Container(
+                  height: 34,
+                  width: 112,
+                  decoration: BoxDecoration(
+                    color: AppColors.materialButtonColor,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Center(
+                    child: CustomText(
+                      textModel: TextModel(
+                        title: AppTexts.bookNow,
+                        color: AppColors.white,
+                        fontSize: AppSize.s12.sp,
+                      ),
                     ),
                   ),
                 ),

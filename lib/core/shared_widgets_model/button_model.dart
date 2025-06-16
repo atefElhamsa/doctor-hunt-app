@@ -5,6 +5,8 @@ class ButtonModel {
   final double? padding;
   final String title;
   final Color? color;
+  final Color? borderColor;
+  final Color? textColor;
   final void Function()? onTap;
 
   ButtonModel({
@@ -12,6 +14,8 @@ class ButtonModel {
     this.height,
     this.onTap,
     this.color,
-    this.padding
+    this.padding,
+    this.borderColor,
+    this.textColor,
   });
 }

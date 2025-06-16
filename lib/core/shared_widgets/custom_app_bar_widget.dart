@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import '../shared_widgets_model/text_model.dart';
 import '../utils/app_padding.dart';
 import '../utils/app_size.dart';
@@ -22,11 +23,7 @@ class CustomAppBarWidget extends StatelessWidget {
           const CustomNavigatePop(),
           const SizedBox(width: 30),
           CustomText(
-            textModel: TextModel(
-              title: title,
-              fontWeight: FontWeight.w400,
-              fontSize: AppSize.s18.sp,
-            ),
+            textModel: TextModel(title: title, fontSize: AppSize.s18.sp),
           ),
         ],
       ),
